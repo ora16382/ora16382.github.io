@@ -1,8 +1,9 @@
+<!-- 파일명: test-link.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>앱으로 이동</title>
   <style>
     body {
@@ -10,24 +11,24 @@
       text-align: center;
       padding: 50px;
     }
-    .hidden {
-      display: none;
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>앱으로 이동 중...</h1>
-  <p>잠시만 기다려주세요.</p>
+  <h1>앱으로 이동하시겠어요?</h1>
+  <p>데이트노트 앱에서 이 콘텐츠를 열 수 있어요.</p>
+ <a class="btn"
+   href="intent://ora16382.github.io/test-link#Intent;scheme=https;package=jh.project.datenote;S.browser_fallback_url=https%3A%2F%2Fm.naver.com;end;">
+   앱으로 이동
+</a>
 
-  <script>
-    window.addEventListener('load', function () {
-      const confirmed = confirm("데이트노트 앱으로 이동할까요?");
-      if (confirmed) {
-        window.location.href = "intent://ora16382.github.io/test-link#Intent;scheme=https;package=jh.project.datenote;S.browser_fallback_url=https%3A%2F%2Fm.naver.com;end;";
-      } else {
-        window.location.href = "https://m.naver.com";
-      }
-    });
-  </script>
 </body>
 </html>
