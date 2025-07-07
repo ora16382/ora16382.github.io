@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "jh.project.datenote",
+      "sha256_cert_fingerprints": [
+        "C2:4D:21:E5:47:4B:A5:1B:65:7C:54:ED:89:2B:99:3F:93:93:15:3F:56:9A:2F:3C:1A:21:06:9B:09:E6:4B:50"
+      ]
+    }
+  }
+]
